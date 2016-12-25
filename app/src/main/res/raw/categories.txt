@@ -1,0 +1,10 @@
+* 0 9
+1 School
+2 Recreation
+3 Exercise
+4 Appointments
+5 Work
+6 Chores
+7 Games
+8 Social
+9 Meals

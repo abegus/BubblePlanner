@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_bg"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:id="@+id/relativeLayout4"
+        android:text="Creator: Abe Gustafson \nDate: 5/2/2016\nIntention: To have a decent Demonstration
+        "
+        android:layout_marginBottom="10dp">
+
+
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_bg2"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/relativeLayout5"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="My goal was to create a user friendly and visually appealing scheduling app. I originally wanted to implement more features, however, I ran out time.\n\n
+
+    To use this app:\n
+        You begin by picking a number of tasks through the 'Add Task' button. You then can display your schedule with the 'Create Schedule' button, as well as remove tasks using the 'Remove Task' button.\n
+        Tasks that are added can either have set times or unbounded times (which will result in the program trying to fit them in between or after set time tasks)\n\n
+        **Currently there is a bug related with a memory leak that does not let you use more than a handfull of tasks in your schedule. This began when I started trying to implement the scheduling algorithm that is used to place unbound tasks."
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="To Go back, press the built in back button"
+        android:id="@+id/textView10"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_bg1"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textColor="#fffdfd" />
+
+</RelativeLayout>

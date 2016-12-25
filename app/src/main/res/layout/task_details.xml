@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <AbsoluteLayout
+        android:layout_width="170dp"
+        android:layout_height="215dp"
+        android:background="@drawable/layout_bg"
+        android:padding="10dp"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="7"
+            android:id="@+id/startHour"
+            android:textSize="46dp"
+            android:layout_below="@+id/startUpHour"
+            android:layout_x="0dp"
+            android:layout_y="80dp"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=":"
+            android:id="@+id/textView5"
+            android:textSize="46dp"
+            android:layout_x="52dp"
+            android:layout_y="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="45"
+            android:id="@+id/startMinute"
+            android:textSize="46dp"
+            android:layout_x="60dp"
+            android:layout_y="80dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▲"
+            android:id="@+id/startUpHour"
+            android:background="@drawable/layout_bg2"
+            android:clickable="true"
+            android:onClick="startUpHourM"
+            android:layout_x="0dp"
+            android:layout_y="40dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▲"
+            android:id="@+id/startUpMinute"
+            android:background="@drawable/layout_bg2"
+            android:clickable="true"
+            android:onClick="startUpMinuteM"
+            android:layout_x="60dp"
+            android:layout_y="40dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▼"
+            android:id="@+id/startDownHour"
+            android:background="@drawable/layout_bg2"
+            android:clickable="true"
+            android:onClick="startDownHourM"
+            android:layout_x="0dp"
+            android:layout_y="140dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▼"
+            android:id="@+id/startDownMinute"
+            android:background="@drawable/layout_bg2"
+            android:clickable="true"
+            android:onClick="startDownMinuteM"
+            android:layout_x="60dp"
+            android:layout_y="140dp" />
+
+        <ToggleButton
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/startAP"
+            android:textOff="PM"
+            android:textOn="AM"
+            android:checked="true"
+            android:clickable="true"
+            android:layout_x="110dp"
+            android:layout_y="85dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Start Time"
+            android:id="@+id/timeBox"
+            android:textSize="30dp"
+            android:layout_x="10dp"
+            android:layout_y="0dp"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_alignRight="@+id/relativeLayout"
+            android:layout_alignEnd="@+id/relativeLayout"
+            android:layout_marginBottom="49dp" />
+
+    </AbsoluteLayout>
+
+    <AbsoluteLayout
+        android:layout_width="170dp"
+        android:layout_height="215dp"
+        android:background="@drawable/layout_bg"
+        android:padding="10dp"
+        android:id="@+id/endTimeLayout"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▲"
+            android:id="@+id/endUpHour"
+            android:background="@drawable/layout_bg2"
+            android:clickable="true"
+            android:onClick="endUpHourM"
+            android:layout_x="0dp"
+            android:layout_y="40dp"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▲"
+            android:id="@+id/endUpMinute"
+            android:background="@drawable/layout_bg2"
+            android:clickable="true"
+            android:onClick="endUpMinuteM"
+            android:layout_x="60dp"
+            android:layout_y="40dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▼"
+            android:id="@+id/endDownHour"
+            android:background="@drawable/layout_bg2"
+            android:clickable="true"
+            android:onClick="endDownHourM"
+            android:layout_x="0dp"
+            android:layout_y="140dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▼"
+            android:id="@+id/endDownMinute"
+            android:background="@drawable/layout_bg2"
+            android:clickable="true"
+            android:onClick="endDownMinuteM"
+            android:layout_x="60dp"
+            android:layout_y="140dp" />
+
+        <TextView
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="10"
+            android:id="@+id/endHour"
+            android:textSize="46dp"
+            android:layout_below="@+id/endUpHour"
+            android:layout_x="0dp"
+            android:layout_y="80dp"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=":"
+            android:id="@+id/textView4"
+            android:textSize="46dp"
+            android:layout_x="52dp"
+            android:layout_y="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="00"
+            android:id="@+id/endMinute"
+            android:textSize="46dp"
+            android:layout_x="60dp"
+            android:layout_y="80dp" />
+
+        <ToggleButton
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/endAP"
+            android:textOff="PM"
+            android:textOn="AM"
+            android:checked="true"
+            android:clickable="true"
+            android:layout_x="110dp"
+            android:layout_y="85dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="End Time"
+            android:id="@+id/textView9"
+            android:textSize="30dp"
+            android:layout_x="10dp"
+            android:layout_y="0dp"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_alignRight="@+id/relativeLayout"
+            android:layout_alignEnd="@+id/relativeLayout"
+            android:layout_marginBottom="49dp" />
+    </AbsoluteLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/taskName"
+        android:background="@drawable/layout_bg"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+    <AbsoluteLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg2"
+        android:padding="10dp"
+        android:id="@+id/informationLayout"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignRight="@+id/endTimeLayout"
+        android:layout_alignEnd="@+id/endTimeLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:layout_x="0dp"
+            android:background="@drawable/layout_bg"
+            android:layout_y="95dp"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Description (Optional)"
+            android:id="@+id/textView2"
+            android:layout_x="75dp"
+            android:layout_y="70dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/duration"
+            android:layout_x="0dp"
+            android:background="@drawable/layout_bg"
+            android:layout_y="35dp"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Time Duration"
+            android:id="@+id/textView8"
+            android:layout_x="0dp"
+            android:layout_y="10dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Time?"
+            android:id="@+id/setTime"
+            android:layout_x="160dp"
+            android:layout_y="20dp"
+            android:textSize="22dp"
+            android:checked="true"
+            android:onClick="checkClicked"
+            android:clickable="true" />
+    </AbsoluteLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/cont"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goBack" />
+
+</RelativeLayout>
